@@ -1,12 +1,3 @@
-<script setup>
-import { ref } from 'vue'
-const isMenuOpen = ref(false);
-
-const toggleMenu = () => {
-  isMenuOpen.value = !isMenuOpen.value;
-}
-</script>
-
 <template>
   <nav class="fixed top-0 z-50 w-full bg-white shadow-lg">
       <div class="flex justify-between items-center h-16 px-4 max-w-[1240px] mx-auto">
@@ -15,15 +6,11 @@ const toggleMenu = () => {
         </h2>
         <div class="sm:hidden">
           <button
-            onClick={toggleMenu}
+        
             class="text-xl text-gray-800 focus:outline-none"
           >
           ☰
-              {isMenuOpen ? (
-                <path d="M6 18L18 6M6 6l12 12"></path>
-              ) : (
-                <path d="M4 6h16M4 12h16m-7 6h7"></path>
-              )}
+             
           </button>
         </div>
         <ul
@@ -38,6 +25,10 @@ const toggleMenu = () => {
     </nav>
 </template>
 
-<style scoped>
 
-</style>
+<script setup>
+import { ref } from 'vue'
+
+</script>
+
+
