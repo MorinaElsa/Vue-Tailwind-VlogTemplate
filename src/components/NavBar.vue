@@ -1,7 +1,10 @@
 <script setup>
 import { ref } from 'vue'
+const isMenuOpen = ref(false);
 
-
+const toggleMenu = () => {
+  isMenuOpen.value = !isMenuOpen.value;
+}
 </script>
 
 <template>
@@ -15,21 +18,12 @@ import { ref } from 'vue'
             onClick={toggleMenu}
             class="text-xl text-gray-800 focus:outline-none"
           >
-            <svg
-              class="w-6 h-6"
-              fill="none"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
+          ☰
               {isMenuOpen ? (
                 <path d="M6 18L18 6M6 6l12 12"></path>
               ) : (
                 <path d="M4 6h16M4 12h16m-7 6h7"></path>
               )}
-            </svg>
           </button>
         </div>
         <ul

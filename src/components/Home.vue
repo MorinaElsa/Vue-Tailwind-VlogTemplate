@@ -34,16 +34,20 @@
   
   <script>
 import imgCook from '../assets/img/cook.png';
-  export default {
-    name: 'HomePage',
-    components: {},
-    data() {
-      return {};
-    },
-  };
-  </script>
+
+export default {
+  name: 'HomePage',
+  components: {},
+  data() {
+    return {
+      imgCook: imgCook
+    };
+  },
+};
+</script>
+
   
   <style scoped>
-  /* Add your component-specific styles here */
+
   </style>
   
