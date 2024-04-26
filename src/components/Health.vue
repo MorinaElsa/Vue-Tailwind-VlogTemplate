@@ -3,11 +3,6 @@
       <div class="grid grid-cols-2 grid-rows-6 lg:h-[50vh] md:h-[50vh] ">
         <img
           class="row-span-3 object-cover w-full h-full p-2"
-          :src='imgCook'
-          alt="food1"
-        />
-        <img
-          class="row-span-2 object-cover w-full h-full p-2"
           :src='imgVlog1'
           alt="food1"
         />
@@ -17,13 +12,18 @@
           alt="food1"
         />
         <img
-          class="row-span-3 object-cover w-full h-full p-2"
+          class="row-span-2 object-cover w-full h-full p-2"
           :src='imgVlog3'
           alt="food1"
         />
         <img
-          class="row-span-2 object-cover w-full h-full p-2"
+          class="row-span-3 object-cover w-full h-full p-2"
           :src='imgInfluencer'
+          alt="food1"
+        />
+        <img
+          class="row-span-2 object-cover w-full h-full p-2"
+          :src='imgCook'
           alt="food1"
         />
       </div>
