@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full bg-influencer-background py-12 font-poppins">
+  <div id="influencers" class="w-full bg-influencer-background py-12 font-poppins">
     <div class="max-w-screen-2xl mx-auto">
       <div class="text-center mb-12 m-auto lg:max-w-5xl sm:max-w-md">
         <span class="text-sm text-gray-400 font-medium">TESTIMONY</span>

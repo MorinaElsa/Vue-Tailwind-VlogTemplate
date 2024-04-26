@@ -1,5 +1,5 @@
 <template>
-     <div class="w-full bg-background-gray">
+     <div id="subscribe" class="w-full bg-background-gray">
       <div class="p-10 lg:p-20 max-w-screen-2xl m-auto flex flex-col lg:flex-row items-start lg:items-center">
         <div class="lg:w-1/2 lg:mr-8 mb-8 lg:mb-0">
           <div class="content mb-6">
