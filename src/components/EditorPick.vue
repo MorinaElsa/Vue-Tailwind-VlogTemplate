@@ -1,5 +1,5 @@
 <template>
-  <div class="site-section mb-20 mt-20">
+  <div id="trending" class="site-section mb-20 mt-20">
     <div class="text-center mb-12">
       <span class="text-sm text-gray-400 font-medium uppercase">
         Trending
