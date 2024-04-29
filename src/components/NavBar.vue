@@ -26,7 +26,7 @@
           v-for="link in dataNavBar"
           :key="link.id"
           class="p-4 hover:text-hover-green"
-          @click="closeMenu"
+          @click="toggleMenu"
         >
           <a :href="link.sectionId"> {{ link.name }} </a>
         </li>
@@ -47,14 +47,9 @@ export default {
       isMenuOpen.value = !isMenuOpen.value;
     };
 
-    const closeMenu = () => {
-      isMenuOpen.value = false;
-    };
-
     return {
       isMenuOpen,
       toggleMenu,
-      closeMenu,
       dataNavBar,
     };
   },
