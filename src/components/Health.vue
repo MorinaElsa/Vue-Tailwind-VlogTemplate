@@ -2,30 +2,13 @@
     <div id="health" class="max-w-[1400px] m-auto py-16 px-4 grid lg:grid-cols-2 gap-4">
       <div class="grid grid-cols-2 grid-rows-6 lg:h-[50vh] md:h-[50vh] ">
         <img
-          class="row-span-3 object-cover w-full h-full p-2"
-          :src='imgVlog1'
+        v-for="imagesHealth in dataHealth"
+        :key="imagesHealth.id"
+        :class="['object-cover', 'w-full', 'h-full', 'p-2', imagesHealth.className]"
+        :src='imagesHealth.imgSrc'
           alt="food1"
         />
-        <img
-          class="row-span-2 object-cover w-full h-full p-2"
-          :src='imgVlog2'
-          alt="food1"
-        />
-        <img
-          class="row-span-2 object-cover w-full h-full p-2"
-          :src='imgVlog3'
-          alt="food1"
-        />
-        <img
-          class="row-span-3 object-cover w-full h-full p-2"
-          :src='imgInfluencer'
-          alt="food1"
-        />
-        <img
-          class="row-span-2 object-cover w-full h-full p-2"
-          :src='imgCook'
-          alt="food1"
-        />
+       
       </div>
       <div class="flex flex-col h-full justify-center">
         <h3 class="text-2xl md:text-2xl text-gray-400 font-semi-bold">
@@ -62,18 +45,15 @@ import imgVlog1 from '../assets/img/vlog1.png'
 import imgVlog2 from '../assets/img/vlog2.jpg'
 import imgVlog3 from '../assets/img/vlog3.jpg'
 import imgInfluencer from '../assets/img/influencer.png'
+import dataHealth from '../assets/data/healthData'
 
 
 export default {
-  name: 'Healthage',
+  name: 'Healthpage',
   components: {},
   data() {
     return {
-      imgCook: imgCook,
-      imgVlog1: imgVlog1,
-      imgVlog2: imgVlog2,
-      imgVlog3:imgVlog3,
-      imgInfluencer:imgInfluencer,
+      dataHealth
     };
   },
 };
