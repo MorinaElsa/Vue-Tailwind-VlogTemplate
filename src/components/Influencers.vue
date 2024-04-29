@@ -16,7 +16,7 @@
         class="m-4 grid gap-4 text-gray-500 text-sm lg:grid-cols-2 sm:grid-cols-1 2xl:grid-cols-4"
       >
         <div
-          v-for="influencer in dataAll"
+          v-for="influencer in dataInfluencers"
           class="min-h-[250px]"
           :key="influencer.id"
         >
@@ -41,14 +41,14 @@
 </template>
 
 <script>
-import dataAll from "../assets/data/influencersData";
+import dataInfluencers from "../assets/data/influencersData";
 
 export default {
   name: "EditorsPickPage",
   components: {},
   data() {
     return {
-      dataAll: dataAll,
+      dataInfluencers: dataInfluencers,
     };
   },
 };

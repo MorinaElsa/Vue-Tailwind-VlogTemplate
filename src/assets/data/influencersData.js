@@ -1,5 +1,5 @@
 import imgInfluencer from "../img/influencer.png";
-const dataI = [
+const dataInfluencers = [
     {
       Id: "1",
       img: imgInfluencer,
@@ -34,5 +34,5 @@ const dataI = [
     },
   ];
   
-  export default dataI;
+  export default dataInfluencers;
   

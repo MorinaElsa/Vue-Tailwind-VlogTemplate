@@ -20,22 +20,15 @@
       <ul
         :class="`uppercase sm:flex ${
           isMenuOpen ? 'block' : 'hidden'
-        } font-mono sm:mt-0 mt-4 absolute sm:relative top-full left-0 sm:top-0 sm:left-auto sm:flex flex-col sm:flex-row bg-white sm:bg-transparent w-full sm:w-auto justify-center items-center` "
+        } font-mono sm:mt-0 mt-4 absolute sm:relative top-full left-0 sm:top-0 sm:left-auto sm:flex flex-col sm:flex-row bg-white sm:bg-transparent w-full sm:w-auto justify-center items-center`"
       >
-        <li class="p-4 hover:text-hover-green" @click="closeMenu">
-          <a href="/"> Home </a>
-        </li>
-        <li class="p-4 hover:text-hover-green" @click="closeMenu">
-          <a href="#trending"> Trending </a>
-        </li>
-        <li class="p-4 hover:text-hover-green" @click="closeMenu">
-          <a href="#influencers"> Influencers </a>
-        </li>
-        <li class="p-4 hover:text-hover-green" @click="closeMenu">
-          <a href="#health"> Health </a>
-        </li>
-        <li class="p-4 hover:text-hover-green" @click="closeMenu">
-          <a href="#subscribe"> Subscribe </a>
+        <li
+          v-for="link in dataNavBar"
+          :key="link.id"
+          class="p-4 hover:text-hover-green"
+          @click="closeMenu"
+        >
+          <a :href="link.sectionId"> {{ link.name }} </a>
         </li>
       </ul>
     </div>
@@ -44,6 +37,7 @@
 
 <script>
 import { ref } from "vue";
+import dataNavBar from "../assets/data/navBarData";
 
 export default {
   setup() {
@@ -61,6 +55,7 @@ export default {
       isMenuOpen,
       toggleMenu,
       closeMenu,
+      dataNavBar,
     };
   },
 };
