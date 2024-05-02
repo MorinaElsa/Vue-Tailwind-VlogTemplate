@@ -4,7 +4,7 @@
       class="flex justify-between items-center h-16 px-4 max-w-[1240px] mx-auto"
     >
       <h2 class="text-3xl font-cabin hover:text-hover-green">Meranda</h2>
-      <div class="md:hidden">
+      <div class="lg:hidden">
         <button
           @click="toggleMenu"
           class="text-xl text-gray-800 focus:outline-none"
@@ -18,9 +18,9 @@
         </button>
       </div>
       <ul
-        :class="`uppercase md:flex ${
+        :class="`uppercase lg:flex ${
           isMenuOpen ? 'block' : 'hidden'
-        } font-mono md:mt-0 mt-4 absolute md:relative top-full left-0 md:top-0 md:left-auto md:flex flex-col md:flex-row bg-white md:bg-transparent w-full md:w-auto justify-center items-center`"
+        } font-mono lg:mt-0 mt-4 absolute lg:relative top-full left-0 lg:top-0 lg:left-auto lg:flex flex-col lg:flex-row bg-white lg:bg-transparent w-full lg:w-auto justify-center items-center`"
       >
         <li
           v-for="link in dataNavBar"
