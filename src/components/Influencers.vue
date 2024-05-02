@@ -5,7 +5,7 @@
     >
       <div class="max-w-screen-2xl mx-auto">
         <div class="text-center mb-12 mx-auto lg:max-w-5xl sm:max-w-md">
-          <span class="text-sm text-gray-400 font-medium">TESTIMONY</span>
+          <span class="text-sm text-gray-400 font-medium uppercase">influencers</span>
           <h2 class="text-3xl text-gray-500 mb-10">Our Influencers </h2>
           <p class="text-sm max-w-screen-sm mx-auto text-gray-500 mb-10 leading-6">
             Far far away, behind the word mountains, far from the countries

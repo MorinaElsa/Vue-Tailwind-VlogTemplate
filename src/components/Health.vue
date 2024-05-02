@@ -1,5 +1,5 @@
 <template>
-    <div id="health" class="max-w-[1400px] m-auto py-16 px-4 grid lg:grid-cols-2 gap-4">
+    <div id="health" class="max-w-[1400px] mx-auto py-16 px-4 grid lg:grid-cols-2 gap-4 mt-10 mb-20">
       <div class="grid grid-cols-2 grid-rows-6 lg:h-[50vh] md:h-[50vh] ">
         <img
         v-for="imagesHealth in dataHealth"
