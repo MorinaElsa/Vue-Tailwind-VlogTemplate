@@ -21,7 +21,7 @@
           class="min-h-[250px] flex flex-col items-center"
           :key="influencer.id"
         >
-          <div class="rounded-full w-[100px] h-[100px] lg:w-[100px] lg:h-[100px]  mb-8" :style="{ backgroundImage: `url(${influencer.img})` , backgroundPosition: 'center', backgroundSize:'cover' }">
+          <div class="rounded-full w-[100px] h-[100px] lg:w-[150px] lg:h-[150px]  mb-8" :style="{ backgroundImage: `url(${influencer.img})` , backgroundPosition: 'center', backgroundSize:'cover' }">
 
           </div>
           <div
