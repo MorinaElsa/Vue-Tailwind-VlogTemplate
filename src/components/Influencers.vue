@@ -18,15 +18,11 @@
         <div class="m-4 grid gap-4 text-gray-500 text-sm lg:grid-cols-2 2xl:grid-cols-4">
         <div
           v-for="influencer in dataInfluencers"
-          class="min-h-[250px]"
+          class="min-h-[250px] flex flex-col items-center"
           :key="influencer.id"
         >
-          <div class="flex justify-center items-center mb-8">
-            <img
-              class="rounded-full w-1/3 h-1/3 lg:w-1/2 lg:h-1/2"
-              :src="influencer.img"
-              alt=" Influencers"
-            />
+          <div class="rounded-full w-[100px] h-[100px] lg:w-[100px] lg:h-[100px]  mb-8" :style="{ backgroundImage: `url(${influencer.img})` , backgroundPosition: 'center', backgroundSize:'cover' }">
+
           </div>
           <div
             class="px-6 sm:px-12 text-center text-xs leading-5 sm:max-w-sm max-w-xs mx-auto"
@@ -43,6 +39,7 @@
 
 <script>
 import dataInfluencers from "../assets/data/influencersData";
+import influencerImg from "../assets/img/influencer.png"
 
 export default {
   name: "EditorsPickPage",
@@ -50,6 +47,7 @@ export default {
   data() {
     return {
       dataInfluencers: dataInfluencers,
+      influencerImg: influencerImg,
     };
   },
 };
